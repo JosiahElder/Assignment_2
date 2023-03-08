@@ -69,5 +69,10 @@ public class Main
                     break;
             }
         }
+
+        JPanel panel = new JPanel();
+        JTextArea textArea = new JTextArea(20, 50);
+        textArea.setEditable(false);
+
     }
 }
