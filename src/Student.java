@@ -1,8 +1,8 @@
 class Student
 {
-    private String name;
-    private String address;
-    private int year;
+    private String name; // store student name
+    private String address; // store student address
+    private int year; // store student year
 
     public Student()
     {
