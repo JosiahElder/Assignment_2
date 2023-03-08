@@ -74,5 +74,20 @@ public class Main
         JTextArea textArea = new JTextArea(20, 50);
         textArea.setEditable(false);
 
+        textArea.append("Students:\n");
+        for (int i = 0; i < studentCount; i++)
+        {
+            textArea.append(students[i].toString() + "\n");
+        }
+
+        textArea.append("\nStaff:\n");
+        for (int i = 0; i < staffCount; i++)
+        {
+            textArea.append(staffs[i].toString() + "\n");
+        }
+
+        panel.add(new JScrollPane(textArea));
+        JOptionPane.showMessageDialog(null, panel,
+                "Report", JOptionPane.PLAIN_MESSAGE);
     }
 }
