@@ -49,6 +49,20 @@ public class Main
                     staff.setName(JOptionPane.showInputDialog("Enter Staff Name"));
                     staff.setAddress(JOptionPane.showInputDialog("Enter Staff Address"));
                     String yearsOfServiceStr = JOptionPane.showInputDialog("Enter Years of Service");
+
+                    try {
+                        int yearsOfService = Integer.parseInt(yearsOfServiceStr);
+                        if (yearsOfService < 1 || yearsOfService > 30) {
+                            JOptionPane.showMessageDialog(null, "Invalid years of service. Please enter a number between 1 and 30.");
+                            continue;
+                        }
+                        staff.setYearsOfService(yearsOfService);
+                    } catch (NumberFormatException e) {
+                        JOptionPane.showMessageDialog(null, "Invalid input for years of service. Please enter a number between 1 and 30.");
+                        continue;
+                    }
+                    staffs[staffCount] = staff;
+                    staffCount++;
                     break;
                 case 2:
                     finished = true;
