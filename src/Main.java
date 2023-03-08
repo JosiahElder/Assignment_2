@@ -20,10 +20,16 @@ public class Main {
 
             switch (choice) {
                 case 0:
-
+                    Student student = new Student();
+                    student.setName(JOptionPane.showInputDialog("Enter Student Name"));
+                    student.setAddress(JOptionPane.showInputDialog("Enter Student Address"));
+                    String yearStr = JOptionPane.showInputDialog("Enter Student Year (1-4)");
                     break;
                 case 1:
-
+                    Staff staff = new Staff();
+                    staff.setName(JOptionPane.showInputDialog("Enter Staff Name"));
+                    staff.setAddress(JOptionPane.showInputDialog("Enter Staff Address"));
+                    String yearsOfServiceStr = JOptionPane.showInputDialog("Enter Years of Service");
                     break;
                 case 2:
                     finished = true;
