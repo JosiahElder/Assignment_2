@@ -1,3 +1,5 @@
+// "Assignment 2, Ready for marking"
+
 import javax.swing.*;
 
 public class Main
