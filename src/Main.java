@@ -9,6 +9,14 @@ public class Main {
         int staffCount = 0;
         boolean finished = false;
 
-
+        while (!finished) {
+            String[] options = {"Student", "Staff", "Finish"};
+            int choice = JOptionPane.showOptionDialog
+                    (null,
+                            "Select Student or Staff",
+                            "Accounting Application",
+                    JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
+                            null, options, options[0]);
+        }
     }
 }
