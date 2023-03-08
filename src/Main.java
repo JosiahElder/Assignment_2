@@ -15,8 +15,20 @@ public class Main {
                     (null,
                             "Select Student or Staff",
                             "Accounting Application",
-                    JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
+                            JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE,
                             null, options, options[0]);
+
+            switch (choice) {
+                case 0:
+
+                    break;
+                case 1:
+
+                    break;
+                case 2:
+                    finished = true;
+                    break;
+            }
         }
     }
 }
